@@ -35,6 +35,7 @@ sns.set(rc={'figure.figsize': (8, 4)})
 volumes.plot()
 # -
 
+#moyennes mensuelles
 volumes.resample('M').mean().plot()
 
 
