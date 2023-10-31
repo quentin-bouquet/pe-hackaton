@@ -33,9 +33,15 @@ plt.style.use('seaborn-v0_8')
 sns.set(rc={'figure.figsize': (8, 4)})
 
 volumes.plot()
-# -
 
+# +
 #moyennes mensuelles
 volumes.resample('M').mean().plot()
+
+#on constate un pic de volume d'échanges boursiers commun à toutes entreprises en début 2020
+#dû probablement à une hausse temporaire dans l'intérêt des gens pour la bourse
+# -
+
+apple.head()
 
 
