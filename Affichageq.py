@@ -38,6 +38,15 @@ CHN.set_index('TIME', inplace = True)
 CHN.sort_index(inplace = True)
 CHN.Value.plot(label='China', color ='green')
 plt.legend()
+
+
+#Calcul du taux d'inlfation:
+USAp = USA.to_numpy()
+inf = []
+for k in range (len(USAp) - 1):
+    a , b = int(USAp[k][5]) , USAp[k + 1][5]
+    inf.append(((b - a)/a)*100)
+plt.plot(inf)
 plt.show()
 
 
