@@ -42,6 +42,6 @@ volumes.resample('M').mean().plot()
 #dû probablement à une hausse temporaire dans l'intérêt des gens pour la bourse
 # -
 
-apple.head()
+
 
 
