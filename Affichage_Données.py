@@ -17,5 +17,6 @@ df['High'] = df['High'].apply(lambda x: float(x[1:]))
 df['Low'] = df['Low'].apply(lambda x: float(x[1:]))
 df['High'].resample('W').mean().plot(c='b')
 df['Low'].resample('W').mean().plot(c='r')
+plt.title("Evolution du prix des actions d'Apple (b=high, r=low)")
 
 plt.show()
