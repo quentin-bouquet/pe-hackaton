@@ -15,7 +15,7 @@ df.sort_index(inplace = True)
 
 df['High'] = df['High'].apply(lambda x: float(x[1:]))
 df['Low'] = df['Low'].apply(lambda x: float(x[1:]))
-df['High'].plot(c='b')
-df['Low'].plot(c='r')
+df['High'].resample('W').mean().plot(c='b')
+df['Low'].resample('W').mean().plot(c='r')
 
 plt.show()
